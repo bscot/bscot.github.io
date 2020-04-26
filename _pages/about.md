@@ -16,7 +16,7 @@ Over the last century, we have discovered that the universe consists primarily o
 
 Although this can be controversial depending on the circles you find yourself in, scientists tend to believe that there is truth in the world, and that it is our job to find it. How do we do this? 
 
-One way is through the notion of 'conditioning our beliefs on the data'. That is, we believe things that the data support more strongly than things that the data do not support. This can be done in a quantitative manner through the methods of Bayesian statistics that provide a powerful link between data and theory. Since our data includes contributions from astrophysics and cosmology together, our theory should do the same. 
+One way is through the notion of 'conditioning our beliefs on the data'. That is, we believe things that the data support more strongly than things that the data do not support. This can be done in a quantitative manner through the methods of Bayesian statistics that provide a powerful link between data and theory. Since our data includes contributions from astrophysics and cosmology together, our theory should do the same. This requires sophisticated numerical methods. 
 
 These ideas are made concrete on my research, publications and talks pages. 
 
