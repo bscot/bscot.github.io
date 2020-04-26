@@ -1,8 +1,8 @@
 ---
-title: "Teaching experience 2"
+title: "Mechanics and Modern Physics for the Life Sciences"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/2-series
 venue: "University 1, Department"
 date: 2015-01-01
 location: "City, Country"
