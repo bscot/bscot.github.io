@@ -1,7 +1,7 @@
 ---
 title: "Mechanics and Modern Physics for the Life Sciences"
 collection: teaching
-type: "Workshop"
+type: "Course"
 permalink: /teaching/2-series
 venue: "University 1, Department"
 date: 2015-01-01
