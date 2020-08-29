@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Simeon Bird's group at the University of California, Riverside. 
+I am a PhD candidate in Simeon Bird's group at the University of California, Riverside. 
 
-My research is in data-driven astrophysics and cosmology as enabled by numerical simulations and (astro)statistics. This means I'm somewhere between being an astronomer and a physicist, somewhere between a theorist, observer and statistician. 
+My research is in data-driven astrophysics and cosmology. This means I'm somewhere between being an astronomer and a physicist, somewhere between a theorist, observer and statistician. 
 
-Over the last century, we have discovered that the universe consists primarily of baryons (or "normal" matter), dark matter, and dark energy. Dark matter and dark energy together contribute 95% of the mass-energy budget and are therefore key for determining the behavior of the universe on the largest scales, that is, cosmology. However, since they both influence the behavior of and are primarily understood through astrophysical measurements of the baryons, neither astrophysics nor cosmology can be viewed completely independently. My work aims at this intersection through state of the art statistical and numerical methods. 
+Over the last century, we have discovered that the universe consists primarily of baryons (or "normal" matter), dark matter, and dark energy. Dark matter and dark energy together contribute 95% of the mass-energy budget and are therefore key for determining the behavior of the universe on the largest scales, that is, cosmology. However, since they both influence the behavior of and are primarily understood through astrophysical measurements of the baryons, neither astrophysics nor cosmology can be viewed completely independently. My work aims at this intersection. 
 
 Although this can be controversial depending on the circles you find yourself in, scientists tend to believe that there is truth in the world, and that it is our job to find it. How do we do this? 
 
