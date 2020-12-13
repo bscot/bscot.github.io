@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/Physics-40-Series
 venue: "University of California, Riverside Physics and Astronomy"
-date: 2016
+date: 07-06-2016
 location: "Riverside, California"
 ---
 
