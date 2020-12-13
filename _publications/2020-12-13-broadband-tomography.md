@@ -1,9 +1,9 @@
 ---
 title: "Broadband Tomography with the Cosmological Advanced Survey Telescope for Optical-UV Research (CASTOR)"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2020-12-03
+permalink: /publication/2020-12-13-broadband-tomography
+excerpt: 'This paper is a forecast for a broadband tomographic measurement of the UV background.'
+date: 2020-12-13
 venue: 'TBD'
 citation: 'Scott, Bryan. (2021). &quot"Broadband Tomography with the Cosmological Advanced Survey Telescope for Optical-UV Research (CASTOR).&quot; <i>TBD</i>. 1(1).'
 ---
