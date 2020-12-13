@@ -1,5 +1,5 @@
 ---
-title: "Physics 40 Series"
+title: "Mechanics for Scientists and Engineers"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/Physics-40-Series
