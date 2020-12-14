@@ -1,7 +1,7 @@
 ---
-title: 'This is a Blog Post About Physics'
+title: 'This is a Blog About Physics'
 date: 2019-04-01
-permalink: /posts/2019/04/this-is-a-blog-post-about-physics/
+permalink: /posts/2019/04/this-is-a-blog-about-physics/
 tags:
   - Physics
   - Philosophy
