@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Bryan Scott - PhD Student"
+title                    : "Bryan Scott - PhD Candidate"
 title_separator          : "-"
 name                     : &name "Bryan Scott"
-description              : &description "PhD Student at UC Riverside"
+description              : &description "PhD Candidate at UC Riverside"
 url                      : https://bscot.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bscot/bscot.github.io"
