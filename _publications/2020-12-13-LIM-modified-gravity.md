@@ -3,7 +3,7 @@ title: "Constraints on Modified Gravity with Line Intensity Mapping"
 collection: publications
 permalink: /publication/2020-12-13-LIM-modified-gravity
 excerpt: 'This paper forecasts a measurement of deviations from General Relativity with CO Line Intensity Mapping.'
-date: 2010-10-01
+date: 2020-10-01
 venue: 'TBD'
 citation: 'Scott, Bryan, et al. (2021). &quot;Constraints on Modified Gravity with Line Intensity Mapping&quot; <i>TBD</i>. .'
 ---
