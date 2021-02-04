@@ -1,7 +1,7 @@
 ---
 title: "The Origins"
 collection: teaching
-type: "Undergradaute Course"
+type: "Undergraduate Course"
 permalink: /teaching/037
 venue: "University of California, Riverside Department of Physics Astronomy"
 date: 2018-09-01
