@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>[Affiliations](https://ciera.northwestern.edu)</a>. 1800 Sherman Ave, Evanston IL 60201. 
 
 profile:
   align: right
@@ -13,9 +13,9 @@ profile:
     <p>1800 Sherman Ave </p>
     <p>Evanston, IL 60201</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 I am a data oriented astrophysicist and cosmologist. I primarily work on current and next generation large surveys. By combining data from multiple surveys we can overcome limitations inherent to each, giving us a coherent picture of the evolution of the universe across cosmic time. Current focuses include,
