@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>[Affiliations](https://ciera.northwestern.edu)</a>. 1800 Sherman Ave, Evanston IL 60201. 
+subtitle: <a href='#'>[Affiliations](https://ciera.northwestern.edu)</a>. bryan dot scott at northwestern dot edu 1800 Sherman Ave, Evanston IL 60201. 
 
 profile:
   align: right
