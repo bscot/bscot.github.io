@@ -1,114 +1,518 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 <head>
-  <title>Bryan R Scott</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bryan Scott — Applied Scientist and Strategist in Advertising Technology" />
+  <title>Bryan Scott</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo" aria-label="Home">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- motion lines — angled streaks showing trajectory of the fall -->
+          <line x1="2" y1="2" x2="7" y2="6" opacity="0.5"/>
+          <line x1="1" y1="7" x2="7" y2="11" opacity="0.6"/>
+          <line x1="3" y1="11" x2="9" y2="15" opacity="0.55"/>
+          <line x1="2" y1="16" x2="6" y2="19" opacity="0.4"/>
+          <g transform="rotate(-22 17 18)">
+            <!-- stem -->
+            <path d="M17 10 L18 6"/>
+            <!-- leaf -->
+            <path d="M18 6 C21 5 22.5 7 20.5 9"/>
+            <!-- apple body -->
+            <path d="M17 10 C14 8 9 9 8 13 C6 17 7 23 11 26 C13 28 15 27 17 26 C19 27 21 28 23 26 C27 23 28 17 26 13 C25 9 20 8 17 10 Z"/>
+          </g>
+        </svg>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">World Line</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color scheme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
+  <main>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Bryan Scott, Ph.D.</h1>
+        <h2 class="hero-title">Applied Scientist</h2>
+        <p class="hero-domains">Machine Learning &nbsp;·&nbsp; Advertising Technology &nbsp;·&nbsp; Quantitative Strategy</p>
+        <p class="hero-bio">
+          Applied Scientist and Strategist at <a href="https://www.postie.com" target="_blank" rel="noopener">Postie</a>, building causal models that measure incremental performance: what a campaign actually caused, not just what happened after it ran. My work is grounded in physics and machine learning. I care about getting the mechanism right, not just fitting the data.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/bscot" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/bryan-scott-59704b1a5" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:bryan.scott@postie.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
 
-        <div class="row">
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm an applied scientist: someone who brings the habits of scientific
+              inquiry to practical problems. In advertising, the question that matters
+              is incrementality: how many of these outcomes would have happened anyway?
+              Answering it means building models grounded in mechanism rather than correlation, being explicit about what identifies
+              a causal claim, and designing measurement systems that can actually be
+              wrong. Currently at <a href="https://www.postie.com" target="_blank" rel="noopener">Postie</a>,
+              applying that approach to direct mail advertising.
+            </p>
+            <p>
+              My background spans cosmological tests of gravity at <a href="https://www.ucr.edu" target="_blank" rel="noopener">University of California, Riverside</a> and
+              <a href="https://ciera.northwestern.edu" target="_blank" rel="noopener">Northwestern's CIERA</a>, spacecraft mission risk analysis at <a href="https://www.jpl.nasa.gov" target="_blank" rel="noopener">JPL</a>, and
+              now causal modeling of incremental performance in adtech. The domain
+              changes; the core problem doesn't: inferring cause from observation when
+              you can't run the experiment you want. That work translates directly into
+              quantitative strategy: deciding where the next dollar earns the most
+              incremental return, what to measure, and
+              which signals to trust when the data can't answer those questions on its own.
+            </p>
 
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="talk_pic.JPG" alt="" style="width:520px;height:320px;"><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>I am the LSST Discovery Alliance <a href="https://lsstdiscoveryalliance.org/programs/data-science-fellowship/">Data Science Fellowship Program</a> Postdoctoral Scholar at the Center for Interdisciplinary Exploration and Research in Astrophysics, Northwestern University.</p>
-					
-					<p>My PhD in Physics was completed at the <a href="https://www.physics.ucr.edu">University of California, Riverside</a> under the supervision of <a href="https://sbird.github.io">Simeon Bird</a>. My dissertation was on measurements of fundamental physics and galaxy evolution from the largest scale structures in the universe. I am broadly interested in machine learning and statistics with applications to large astrophysical and cosmological surveys, especially the <a href="https://rubinobservatory.org">Vera C Rubin Observatory</a> Legacy Survey of Space & Time, The Subaru Telescope <a href="https://pfs.ipmu.jp">Prime Focus Spectrograph</a> Galaxy Evolution Survey, and to the design of future <a href="https://lambda.gsfc.nasa.gov/education/graphic_history/intensitymapping.html">Line Intensity Mapping</a> experiments at many wavelengths. These projects will revolutionize our understanding of fundamental physics, including the nature of dark matter and dark energy, improve our theories of gravity on the largest scales, and reveal the connections between galaxies and the structure of the universe. In November 2024, I delivered the Hunstead lecture series at the Institute of Astronomy, University of Sydney, on data science education and astrophysics. I am also a first generation college graduate. </p>
-					
-					<p> I also have extensive experience in science education and social justice. I hold certificates in higher education pedagogy, inclusive excellence, and science policy from the University of California, Riverside, and a certificate in Reflective & Effective Teaching from the Searle Center for Advancing Teaching and Learning at Northwestern University. I led the <a href="https://www.aps.org/initiatives/inclusion/idea">APS IDEA</a> team at UCR and co-lead the Chicago Area LSST Expansion Partnership between Northwestern, Illinois Tech, and the Chicago City Colleges to expand access for transfer and non-traditional students to astrophysical survey science. My teaching and mentorship projects are funded by the National Science Foundation, the Gordon and Betty Moore Foundation, the Brinson Foundation, and the Heising-Simons Foundation.</p>
-                </div>
-            </div> 
 
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Bryan R Scott</b></div><br>
-                <p><b>bryan.scott@northwestern.edu</b><br>
-                <p>Center for Interdisciplinary Exploration and Research in Astrophysics<br>
-                Northwestern University<br>
-                1800 Sherman Ave<br>
-                Evanston, IL <br>
-                United States of America<br>
-                </p>
+
+            <div class="skills">
+              <h3>How I work</h3>
+              <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>pandas</li>
+                <li>PyTorch</li>
+                <li>Spark</li>
+                <li>Causal Inference</li>
+                <li>Structural Causal Models</li>
+                <li>Media Mix Modeling</li>
+                <li>Representation Learning</li>
+                <li>Bayesian Methods</li>
+                <li>Experimental Design</li>
+                <li>Information Geometry</li>
+              </ul>
             </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd> 
+          </div>
+          <div class="about-image-wrap">
+            <img src="assets/img/profile.jpg" alt="Bryan Scott" class="about-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+                <!-- Newton's cradle -->
+                <line x1="6" y1="7" x2="30" y2="7"/>
+                <line x1="8" y1="7" x2="2.5" y2="22"/>
+                <line x1="13" y1="7" x2="13" y2="23"/>
+                <line x1="18" y1="7" x2="18" y2="23"/>
+                <line x1="23" y1="7" x2="23" y2="23"/>
+                <line x1="28" y1="7" x2="28" y2="23"/>
+                <circle cx="2.5" cy="24" r="2.5"/>
+                <circle cx="13" cy="25.5" r="2.5"/>
+                <circle cx="18" cy="25.5" r="2.5"/>
+                <circle cx="23" cy="25.5" r="2.5"/>
+                <circle cx="28" cy="25.5" r="2.5"/>
+              </svg>
+              <div class="project-links">
+                <span class="project-internal">proprietary</span>
+              </div>
             </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                
-                <strong> First Author Peer-reviewed Publications (submitted, in press)</strong><br/>
-                <ul>
-		<li class="paper" words="add, your, keywords, here"><a href="#">Application of an Information Theoretic Metric to Photometric Redshift Quality in Large Photometric Surveys: LSST, Roman, Euclid, and CASTOR</a> Bryan R Scott, Alex I Malz, and Robert Sorba</li>
-                <li class="paper" words="add, your, keywords, here"><a href="#">A forecast for large-scale structure constraints on Horndeski gravity with CO line intensity mapping</a> Bryan R Scott, Kirit Karkare, and Simeon Bird</li>
-		<li class="paper" words="add, your, keywords, here"><a href="#">Forecasts for broad-band intensity mapping of the ultraviolet-optical background with CASTOR and SPHEREx</a> Bryan R Scott, Phoebe Upton-Sanderbeck, and Simeon Bird</li>
-                </ul>
+            <h3 class="project-title">Causal Optimization</h3>
+            <p class="project-desc">
+              What did a campaign actually cause? Structural causal models and representation learning for estimating incremental lift household by household. Learned latent confounders are combined with doubly-robust estimators to separate true incremental response from selection bias. Those estimates then drive budget allocation where experiments are too expensive to run everywhere.
+            </p>
+            <ul class="project-tags">
+              <li>Causal Inference</li>
+              <li>Incrementality</li>
+              <li>Representation Learning</li>
+            </ul>
+          </article>
 
-			  <p>The Prime Focus Spectrograph is an instrument at the Subaru Telescope at the summit of Mauna a Wākea ("Mauna Kea"). This location has significant cultural, historical, and natural significance in 	Hawai'i. A significant number of people remain unhoused after the 2023 fires on the island of Maui, you can donate to support this community <a href="https://www.hawaiicommunityfoundation.org/strengthening/maui-strong-fund"> here</a> or to support the Native Hawaiian community more broadly <a href="https://www.hawaiiancouncil.org"> here. </a>
-  </p>
-	 <p> The Northwestern campus sits on the traditional homelands of the people of the Council of Three Fires, the Ojibwe, Potawatomi, and Odawa as well as the Menominee, Miami and Ho-Chunk nations. It was also a site of trade, travel, gathering and healing for more than a dozen other Native tribes and is still home to over 100,000 tribal members in the state of Illinois.</p>
+          <article class="project-card">
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+                <!-- H symbol -->
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="8.5" y1="7.5" x2="8.5" y2="16.5"/>
+                <line x1="15.5" y1="7.5" x2="15.5" y2="16.5"/>
+                <line x1="8.5" y1="12" x2="15.5" y2="12"/>
+              </svg>
+              <div class="project-links">
+                <a href="https://github.com/aimalz/CASTORpz" aria-label="GitHub repo" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://arxiv.org/abs/2409.20443" aria-label="arXiv preprint" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 34 16" width="34" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <text y="13" font-family="Georgia,'Times New Roman',serif" font-size="13">ar<tspan font-size="15" font-style="italic" dy="0.8">&#x3C7;</tspan><tspan font-size="13" dy="-0.8">iv</tspan></text>
+                  </svg>
+                </a>
+              </div>
             </div>
+            <h3 class="project-title">Information Metrics</h3>
+            <p class="project-desc">
+              Information-geometric framework for optimizing photometric survey design. Quantifies recoverable redshift information across Stage IV galaxy surveys using Fisher forecasts and natural gradient methods to maximize constraining power under observational limits.
+            </p>
+            <ul class="project-tags">
+              <li>Information Theory</li>
+              <li>Machine Learning</li>
+              <li>Statistical Geometry</li>
+            </ul>
+          </article>
 
-
+          <article class="project-card">
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+                <!-- Pear (squat) -->
+                <path d="M19 13 L20 8"/>
+                <path d="M20 8 C24 7.5 25.5 10.5 22.5 12.5"/>
+                <path d="M19 13 C16 13 15 16 16 19 C16.5 21 11 22 10.5 26 C10 30.5 15 31.5 19 31.5 C23 31.5 28 30.5 27.5 26 C27 22 21.5 21 22 19 C23 16 22 13 19 13 Z"/>
+              </svg>
+              <div class="project-links">
+                <a href="https://github.com/bscot/Horndeski-LIM" aria-label="GitHub repo" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://arxiv.org/abs/2209.13029" aria-label="arXiv preprint" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 34 16" width="34" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <text y="13" font-family="Georgia,'Times New Roman',serif" font-size="13">ar<tspan font-size="15" font-style="italic" dy="0.8">&#x3C7;</tspan><tspan font-size="13" dy="-0.8">iv</tspan></text>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Tests of Gravity</h3>
+            <p class="project-desc">
+              Design of next generation experiments to probe the fundamental forces shaping the universe, with a focus on testing theories of modified gravity and dark energy.
+            </p>
+            <ul class="project-tags">
+              <li>Experimental Design</li>
+              <li>Spatial Processes</li>
+              <li>Statistical Forecasting</li>
+            </ul>
+          </article>
 
         </div>
+        <div class="projects-more">
+          <a href="https://github.com/bscot" class="btn btn-outline" target="_blank" rel="noopener">
+            See More on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
 
-	    
+    <!-- Publications -->
+    <section class="publications section section-alt" id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <ol class="pub-list">
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2027</span>
+              <span class="pub-tag">Forthcoming</span>
+            </div>
+            <h3 class="pub-title">Bayesian Modified Gravity Model Selection Forecast from Line Intensity Mapping</h3>
+            <p class="pub-authors">B. R. Scott, G. Sun</p>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2024</span>
+            </div>
+            <h3 class="pub-title">A Holistic Exploration of the Potentially Recoverable Redshift Information of Stage IV Galaxy Surveys</h3>
+            <p class="pub-authors">B. Scott, A. Malz, R. Sorba</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2409.20443" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2022</span>
+            </div>
+            <h3 class="pub-title">A Forecast for Large Scale Structure Constraints on Horndeski Gravity with Line Intensity Mapping</h3>
+            <p class="pub-authors">B. Scott, et al.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2209.13029" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2022</span>
+            </div>
+            <h3 class="pub-title">Rotation Models for the Galilean Satellites</h3>
+            <p class="pub-authors">B. G. Bills, B. R. Scott</p>
+            <div class="pub-links">
+              <a href="https://ui.adsabs.harvard.edu/abs/2022P%26SS..21905474B/abstract" target="_blank" rel="noopener">ADS</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2021</span>
+            </div>
+            <h3 class="pub-title">Forecasts for Broadband Intensity Mapping of the Ultraviolet-Optical Background with CASTOR and SPHEREx</h3>
+            <p class="pub-authors">B. Scott, et al.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2104.00017" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2021</span>
+            </div>
+            <h3 class="pub-title">[C II] Line-Intensity Mapping Power Spectrum from the EoR</h3>
+            <p class="pub-authors">B. Scott, et al.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2110.10687" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2017</span>
+            </div>
+            <h3 class="pub-title">Secular Obliquity Variations of Ceres and Pallas</h3>
+            <p class="pub-authors">B. G. Bills, B. R. Scott</p>
+            <div class="pub-links">
+              <a href="https://ui.adsabs.harvard.edu/abs/2017Icar..284...59B/abstract" target="_blank" rel="noopener">ADS</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2016</span>
+            </div>
+            <h3 class="pub-title">Fading AGN Candidates: AGN Histories and Outflow Signatures</h3>
+            <p class="pub-authors">B. Scott, et al.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/1612.06006" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-year">2016</span>
+            </div>
+            <h3 class="pub-title">Prospects of Passive Radio Detection of a Subsurface Ocean on Europa with a Lander</h3>
+            <p class="pub-authors">B. Scott, et al.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/1602.06016" target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section-title">
+          World Line
+          <svg viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;opacity:0.8">
+            <!-- x-axis -->
+            <line x1="1" y1="15" x2="29" y2="15" opacity="0.5"/>
+            <polyline points="27,13 29,15 27,17" opacity="0.5"/>
+            <!-- t-axis -->
+            <line x1="15" y1="29" x2="15" y2="1" opacity="0.5"/>
+            <polyline points="13,3 15,1 17,3" opacity="0.5"/>
+            <!-- past light cone (dashed) -->
+            <line x1="15" y1="15" x2="3" y2="27" stroke-dasharray="2.5,2"/>
+            <line x1="15" y1="15" x2="27" y2="27" stroke-dasharray="2.5,2"/>
+            <!-- future light cone -->
+            <line x1="15" y1="15" x2="3" y2="3"/>
+            <line x1="15" y1="15" x2="27" y2="3"/>
+            <!-- worldline -->
+            <path d="M15,26 C12,21 20,16 18,4" stroke-width="2"/>
+          </svg>
+        </h2>
+        <ol class="timeline">
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <p class="timeline-date">2025 — Present</p>
+                <a class="timeline-logo" href="https://www.postie.com" target="_blank" rel="noopener" aria-label="Postie website">
+                  <img src="assets/img/logos/postie.svg" alt="Postie">
+                </a>
+              </div>
+              <h3 class="timeline-role">Applied Scientist and Strategist</h3>
+              <p class="timeline-company"><a href="https://www.postie.com" target="_blank" rel="noopener">Postie</a></p>
+              <p class="timeline-desc">
+                Quantitative strategy for advertising measurement and optimization.
+                Building causal inference frameworks that translate observational
+                campaign data into defensible budget allocation and channel decisions.
+                Active work includes media mix modeling with marginal effects for
+                cross-channel spend optimization, compliant marketing pipelines for
+                regulated financial products, and dynamic pricing models for
+                audience selection and bid optimization across direct-response channels.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <p class="timeline-date">2022 — 2025</p>
+                <a class="timeline-logo timeline-logo--nu" href="https://ciera.northwestern.edu" target="_blank" rel="noopener" aria-label="CIERA, Northwestern University">
+                  <img src="assets/img/logos/northwestern.png" alt="CIERA, Northwestern University">
+                </a>
+              </div>
+              <h3 class="timeline-role">Postdoctoral Researcher</h3>
+              <p class="timeline-company"><a href="https://ciera.northwestern.edu" target="_blank" rel="noopener">CIERA, Northwestern University</a></p>
+              <p class="timeline-desc">
+                Research on line-intensity mapping, modified gravity, and
+                information-theoretic approaches to survey design. Published
+                work on forecasting large-scale structure constraints on
+                Horndeski gravity and redshift information recovery for
+                Stage IV galaxy surveys.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <p class="timeline-date">2016 — 2022</p>
+                <a class="timeline-logo" href="https://physics.ucr.edu" target="_blank" rel="noopener" aria-label="UCR Department of Physics & Astronomy">
+                  <img src="assets/img/logos/ucr.svg" alt="University of California, Riverside">
+                </a>
+              </div>
+              <h3 class="timeline-role">Ph.D., Physics</h3>
+              <p class="timeline-company"><a href="https://www.ucr.edu" target="_blank" rel="noopener">University of California, Riverside</a></p>
+              <p class="timeline-desc">
+                Dissertation on tests of gravity using large-scale structure.
+                Advisor: Simeon Bird. Developed statistical frameworks for
+                constraining modified gravity theories with observational
+                cosmological data; published on intensity mapping forecasts
+                and experimental design for next-generation surveys.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <p class="timeline-date">2014 — 2016</p>
+                <a class="timeline-logo" href="https://www.jpl.nasa.gov" target="_blank" rel="noopener" aria-label="Jet Propulsion Laboratory">
+                  <img src="assets/img/logos/jpl.svg" alt="Jet Propulsion Laboratory / Caltech">
+                </a>
+              </div>
+              <h3 class="timeline-role">Scientist</h3>
+              <p class="timeline-company"><a href="https://www.jpl.nasa.gov" target="_blank" rel="noopener">Jet Propulsion Laboratory / Caltech</a></p>
+              <p class="timeline-desc">
+                Spacecraft mission risk reduction analysis. Assessed technical
+                and programmatic risk across mission concepts, supporting
+                decisions on instrument design and system architecture.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <p class="timeline-date">2010 — 2014</p>
+                <a class="timeline-logo timeline-logo--calpoly" href="https://physics.calpoly.edu" target="_blank" rel="noopener" aria-label="Cal Poly Physics Department">
+                  <img src="assets/img/logos/calpoly.svg" alt="Cal Poly, San Luis Obispo">
+                </a>
+              </div>
+              <h3 class="timeline-role">B.S., Physics</h3>
+              <p class="timeline-company"><a href="https://www.calpoly.edu" target="_blank" rel="noopener">Cal Poly, San Luis Obispo</a></p>
+              <p class="timeline-desc">
+                Undergraduate research in observational astrophysics.
+                Graduated with honors.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section section-alt" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">
+          I'm an Applied Scientist and Strategist at <a href="https://www.postie.com" target="_blank" rel="noopener">Postie</a>,
+          working on causal measurement and quantitative strategy for direct mail advertising.
+          Outside of work my astronomical interests are extragalactic — large-scale structure,
+          intensity mapping, and the statistical fingerprints that modified gravity and dark
+          energy leave on the universe. If you want to talk about causal inference, adtech, or what the
+          large-scale structure of the universe can tell us about fundamental physics,
+          my inbox is open.
+        </p>
+        <a href="mailto:bryan.scott@postie.com" class="btn btn-primary btn-lg">Say Hello</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Designed by <strong>Bryan Scott</strong> </p>
+      <p class="footer-copy">© <span id="year"></span></p>
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
-
-
-
 </html>
